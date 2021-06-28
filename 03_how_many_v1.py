@@ -20,5 +20,5 @@ def num_check(question, low, high):
 
 
 # Main routine go here
-how_much = num_check("How many addition questions would you like to answer ? ", 0, 10 )
+how_many = num_check("How many addition questions would you like to answer? ", 0, 10 )
 
