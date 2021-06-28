@@ -19,7 +19,7 @@ def yes_no(question):
 def instructions():
 	print ("**** How to Play ****") 
 	print()
-	print ("The rules of the game go here")
+	print ("In this paticular addition game the aim is to answer as many addition questions as you can correctly.")
 	print () 
 	return "" 
 
