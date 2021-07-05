@@ -1,2 +1,2 @@
 language = "python3"
-run = "python 04_low_number.py"
+run = "python 04_low_number_v1.py"

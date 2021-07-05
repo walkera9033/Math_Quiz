@@ -21,7 +21,7 @@ def yes_no(question):
 def instructions():
 	print ("**** How to Play ****") 
 	print()
-	print ("in this paticular game the aim is to answer as many addition questions as you can correctly.")
+	print("in this paticular game the aim is to answer as many addition questions as you can correctly.")
 	print () 
 	return "" 
 
@@ -34,4 +34,28 @@ if played_before == "no":
  
 elif played_before == "yes": 
 	print("program continues")
+def num_check(question, low, high):
+	error = "Please enter an whole number be between 1 and 10"
+
+	valid = False 
+	while not valid:
+		try:
+			# Ask the question 
+			response = int(input(question))
+			# if the amount is too low / too high give 
+			if low < response <= high:
+				return response
+
+			# output an error
+			else:
+				print(error)
+
+		except ValueError:
+				print(error)
+
+
+# Main routine go here
+how_many = num_check("How many addition questions would you like to answer? ", 0, 10 )
+low_num = num_check("What is the lowest number for a question? ", -500, 500)
+
 
