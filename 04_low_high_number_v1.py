@@ -17,3 +17,4 @@ def num_check(question, low, high):
 
 # main routine
 low_num = num_check("What is the lowest number for a question? ", -500, 500)
+high_num = num_check("What is the highest number for a question? ", low_num, 1000)
