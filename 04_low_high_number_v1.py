@@ -1,6 +1,6 @@
 # number checking function
 def num_check(question, low, high):
-    error = "Please enter a whole number between 1 and 10\n"
+    error = "Please enter a whole number between low and high\n"
     valid = False
     while not valid:
         try:

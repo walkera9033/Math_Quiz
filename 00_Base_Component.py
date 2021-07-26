@@ -21,7 +21,7 @@ def yes_no(question):
 def instructions():
 	print ("**** How to Play ****") 
 	print()
-	print("in this paticular game the aim is to answer as many addition questions as you can correctly.")
+	print("in this paticular additiom game the aim is to answer as many addition questions as you can correctly in your own time.")
 	print () 
 	return "" 
 
@@ -35,7 +35,7 @@ if played_before == "no":
 elif played_before == "yes": 
 	print("program continues")
 def num_check(question, low, high):
-	error = "Please enter an whole number be between 1 and 10"
+	error = "Please enter a whole number between low and high\n"
 
 	valid = False 
 	while not valid:
