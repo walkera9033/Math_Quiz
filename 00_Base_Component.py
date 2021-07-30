@@ -21,7 +21,7 @@ def yes_no(question):
 def instructions():
 	print ("**** How to Play ****") 
 	print()
-	print("in this paticular additiom game the aim is to answer as many addition questions as you can correctly in your own time.")
+	print("in this paticular addition game the aim is to answer as many addition questions as you can correctly.")
 	print () 
 	return "" 
 
@@ -58,6 +58,6 @@ def num_check(question, low, high):
 how_many = num_check("How many addition questions would you like to answer? ", 0, 10 )
 low_num = num_check("What is the lowest number for a question? ", -500, 500)
 high_num = num_check("What is the highest number for a question? ", low_num, 1000)
-import random
+print("*Question one*")
 
 
