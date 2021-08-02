@@ -1,10 +1,14 @@
 import random
 
-number_1 = random.randint(1, 10)
-number_2 = random.randint(1, 10)
+num_1 = random.randint(1, 10)
+num_2 = random.randint(1, 10)
 
+question = "{} + {}".format(num_1, num_2)
+answer = eval(question)
 
-answer = eval("{} + {}".format(number_1, number_2))
+user_ans = int(input("What is {} = ".format(question)))
 
-print("{} + {}".format(number_1, number_2))
-print("answer", answer)
+if user_ans == answer:
+	print("correct")
+else:
+	print("incorrect")

@@ -58,6 +58,4 @@ def num_check(question, low, high):
 how_many = num_check("How many addition questions would you like to answer? ", 0, 10 )
 low_num = num_check("What is the lowest number for a question? ", -500, 500)
 high_num = num_check("What is the highest number for a question? ", low_num, 1000)
-print("*Question one*")
-
 
