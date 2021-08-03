@@ -31,9 +31,10 @@ answer = eval(question)
 
 user_ans = int(input("What is {} = ".format(question)))
 
-print("Correct!, Well Done :)")
+if user_ans == answer:
+	print("Correct!, Well Done :)")
 else:
- print("incorrect, Nice Try :(")
+	print("incorrect, Nice Try :(")
 
 
 num_3 = random.randint(1, 10)
@@ -54,7 +55,7 @@ else:
 num_5 = random.randint(1, 10)
 num_6 = random.randint(1, 10)
 
-print("Question three")
+print("*Question three*")
 question = "{} + {}".format(num_5, num_6)
 answer = eval(question)
 
@@ -64,8 +65,6 @@ if user_ans == answer:
 	print("Correct!, Well Done :)")
 else:
 	print("incorrect, Nice Try :(")
-
-	
 
 num_7 = random.randint(1, 10)
 num_8 = random.randint(1, 10)
@@ -110,4 +109,70 @@ if user_ans == answer:
 	print("Correct!, Well Done :)")
 else:
 	print("incorrect, Nice Try :(")
+
+
+num_13= random.randint(1, 10)
+num_14 = random.randint(1, 10)
+
+print("*Question seven*")
+question = "{} + {}".format(num_13, num_14)
+answer = eval(question)
+
+user_ans = int(input("What is {} = ".format(question)))
+
+if user_ans == answer:
+	print("Correct!, Well Done :)")
+else:
+	print("incorrect, Nice Try :(")
+
+
+num_15= random.randint(1, 10)
+num_16 = random.randint(1, 10)
+
+print("*Question eight*")
+question = "{} + {}".format(num_15, num_16)
+answer = eval(question)
+
+user_ans = int(input("What is {} = ".format(question)))
+
+if user_ans == answer:
+	print("Correct!, Well Done :)")
+else:
+	print("incorrect, Nice Try :(")
+
+	
+num_17= random.randint(1, 10)
+num_18 = random.randint(1, 10)
+
+print("*Question nine*")
+question = "{} + {}".format(num_17, num_18)
+answer = eval(question)
+
+user_ans = int(input("What is {} = ".format(question)))
+
+if user_ans == answer:
+	print("Correct!, Well Done :)")
+else:
+	print("incorrect, Nice Try :(")
+	
+num_19= random.randint(1, 10)
+num_20 = random.randint(1, 10)
+	
+print("*Question ten*")
+question = "{} + {}".format(num_19, num_20)
+answer = eval(question)
+
+user_ans = int(input("What is {} = ".format(question)))
+
+if user_ans == answer:
+	print("Correct!, Well Done :)")
+else:
+	print("incorrect, Nice Try :(")
+
+print("Game Over!")
+
+
+
+
+
 

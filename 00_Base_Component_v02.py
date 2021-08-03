@@ -36,6 +36,7 @@ if played_before == "no":
  
 elif played_before == "yes": 
 	print("program continues")
+	
 def num_check(question, low, high):
 	error = "Please enter a whole number between low and high\n"
 
