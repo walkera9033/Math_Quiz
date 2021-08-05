@@ -57,12 +57,12 @@ def num_check(question, low, high):
 
 
 # Main routine go here
-how_many = num_check("How many addition questions would you like to answer? ", 0, 10 )
+print("This is a 10 Question addition quizz")
 low_num = num_check("What is the lowest number for a question? ", -500, 500)
 high_num = num_check("What is the highest number for a question? ", low_num, 1000)
 
+# Rounds won will be calculated (total - draw - lost)
 
-# Generate max ( 10 ) questions
 
 num_1 = random.randint(1, 10)
 num_2 = random.randint(1, 10)
@@ -75,6 +75,7 @@ user_ans = int(input("What is {} = ".format(question)))
 
 if user_ans == answer:
 	print("Correct!, Well Done :)")
+
 else:
 	print("incorrect, Nice Try :(")
 
@@ -214,10 +215,6 @@ else:
 print("Game Over!")
 
 # Generating score 
-questions_correct = 0
-questions_incorrect = 0
-
-
 
 
 
