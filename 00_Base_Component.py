@@ -61,7 +61,7 @@ print("This is a 10 Question addition quizz")
 low_num = num_check("What is the lowest number for a question? ", -500, 500)
 high_num = num_check("What is the highest number for a question? ", low_num, 1000)
 
-# Rounds won will be calculated (total - draw - lost)
+# Rounds won will be calculated (total - correct - incorrect)
 
 
 num_1 = random.randint(1, 10)
@@ -213,10 +213,23 @@ else:
 	print("incorrect, Nice Try :(")
 
 print("Game Over!")
+print("Here are your results")
 
 # Generating score 
 
+print("***Game History***")
+print()
+for item in game_summary:
+ print (item)
+print()
+print()
 
-
-
-
+print("****Game Statistics****")
+print("Correct: {}, ({:.0f}%)\nincorrect: {}, ({:.0f}%)".format(question_correct,
+ question_incorrect))
+ 
+# End of game statements
+print("****End Game Summary*****")
+print("Correct: {} \t|\t incorrect: {}".format(question_correct, question_incorrect))
+print()
+print("Thanks for playing")
