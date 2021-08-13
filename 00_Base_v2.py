@@ -68,18 +68,17 @@ questions_answered = 0
 
 game_summary = []
 
- 
-questions = check_questions()
+rounds = 10
 
 	# Start of Game Play Loop
 
 	# Rounds Heading for continuous mode / specific # of rounds
 print()
-if questions == "":
-		heading = "continuous Mode:  Round {}".format(questions_correct + 1)
+if rounds == "":
+	heading = "continuous Mode: Round {}".format(questions_correct + 1)
 else:   
-		heading = "Round {} of {}".format(questions_incorrect +-1, questions)
-
+ heading = "Round 1 of 10".format(questions_incorrect + 1)
+ 
 
 print(heading)
 for item in range(0, 10):
@@ -100,10 +99,10 @@ for item in range(0, 10):
 		print("incorrect, Nice Try :(")
 
 print("Game Over!")
-print("Here are your results")
+print("*** Here are your results ***")
 
 
-feedback ="User: {} vs Computer: {} - {}".format(questions_correct,questions_incorrect,questions_answered)
+feedback ="questions correct: {} vs questions incorrect: {}".format(questions_correct,questions_incorrect)
 print(feedback)
 print()
 
