@@ -1,13 +1,5 @@
 {
   "files": {
-    "00_Base_v2.py": [
-      {
-        "id": "e12a54cb-aeb1-4c55-82a2-924b1ebfaf80",
-        "line": 76,
-        "version": 334,
-        "index": 1615
-      }
-    ],
     "05_question_generator_v1.py": [
       {
         "id": "415ae0be-cfe0-4677-bdb7-6a539a76fb4b",

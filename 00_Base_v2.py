@@ -57,14 +57,13 @@ def num_check(question, low, high):
 
 
 # Main routine go here
-print("This is a 10 Question addition quizz")
+print("**** This is a 10 Question addition quizz ****")
 low_num = num_check("What is the lowest number for a question? ", -500, 500)
 high_num = num_check("What is the highest number for a question? ", low_num, 1000)
 
 # Rounds won will be calculated (total - correct - incorrect)
 questions_correct = 0
 questions_incorrect = 0
-questions_answered = 0
 
 game_summary = []
 
@@ -77,7 +76,7 @@ print()
 if rounds == "":
 	heading = "continuous Mode: Round {}".format(questions_correct + 1)
 else:   
- heading = "Round 1 of 10".format(questions_incorrect + 1)
+ heading = "Question 1 of 10".format(questions_incorrect + 1)
  
 
 print(heading)
@@ -94,15 +93,17 @@ for item in range(0, 10):
 
 	if user_ans == answer:
 		print("Correct!, Well Done :)")
+		questions_correct += 1
 
 	else:
 		print("incorrect, Nice Try :(")
+		questions_incorrect += 1
 
 print("Game Over!")
 print("*** Here are your results ***")
 
 
-feedback ="questions correct: {} vs questions incorrect: {}".format(questions_correct,questions_incorrect)
+feedback ="questions correct: {} questions incorrect: {}".format(questions_correct,questions_incorrect)
 print(feedback)
 print()
 
